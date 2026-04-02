@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "../../pages/LoginPage";
+import { InventoryPage } from "../../pages/InventoryPage";
 
 test.describe("Authentication - Login", () => {
   let loginPage: LoginPage;
@@ -10,10 +11,13 @@ test.describe("Authentication - Login", () => {
   });
 
   test("should login successfully with valid credentials", async ({ page }) => {
+    const inventoryPage = new InventoryPage(page);
+
     await loginPage.login("standard_user", "secret_sauce");
 
     await expect(page).toHaveURL(/inventory.html/);
-    await expect(page.getByTestId("title")).toHaveText("Products");
+    await expect(inventoryPage.title).toHaveText("Products");
+    await expect(inventoryPage.inventoryList).toBeVisible();
   });
 
   test("should show an error message for locked out user", async ({ page }) => {
