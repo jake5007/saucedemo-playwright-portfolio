@@ -53,21 +53,16 @@ The goal of this project is to showcase QA automation skills including:
 
 ## Project Structure
 
-tests/
-auth/
-login.spec.ts # Authentication test scenarios
+- tests/auth/login.spec.ts → authentication test scenarios
+- tests/shopping/cart.spec.ts → cart-related test scenarios
+- tests/shopping/checkout.spec.ts → checkout flow and validation tests
 
-shopping/
-cart.spec.ts # Cart-related test scenarios
-checkout.spec.ts # Checkout flow & validation tests
-
-pages/
-LoginPage.ts # Login page object
-InventoryPage.ts # Product listing & cart interaction
-CartPage.ts # Cart page interactions
-CheckoutInfoPage.ts # Checkout step one (user info)
-CheckoutOverviewPage.ts # Checkout step two (order summary)
-CheckoutCompletePage.ts # Order completion page
+- pages/LoginPage.ts → Page Object for login page
+- pages/InventoryPage.ts → Page Object for inventory page
+- pages/CartPage.ts → Page Object for cart page
+- pages/CheckoutInfoPage.ts → Page Object for checkout step one
+- pages/CheckoutOverviewPage.ts → Page Object for checkout overview
+- pages/CheckoutCompletePage.ts → Page Object for checkout complete page
 
 ## How to Run
 
