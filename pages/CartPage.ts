@@ -13,7 +13,7 @@ export class CartPage {
     this.checkoutButton = page.getByRole("button", { name: "Checkout" });
   }
 
-  getCartItem(productName: string) {
+  getCartItem(productName: string): Locator {
     return this.page
       .getByTestId("inventory-item")
       .filter({ hasText: productName });

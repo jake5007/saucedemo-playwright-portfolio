@@ -8,6 +8,7 @@ The goal of this project is to showcase QA automation skills including:
 - Page Object Model (POM)
 - End-to-end user flow testing
 - Maintainable and scalable test structure
+- Data-driven validation using dynamic expected values
 
 ## Tech Stack
 
@@ -51,11 +52,23 @@ The goal of this project is to showcase QA automation skills including:
 - All fields missing
 - Verify error message and stay on same page
 
+---
+
+### Sorting
+
+- Validate product sorting by name (A → Z, Z → A)
+- Validate product sorting by price (low → high, high → low)
+- Verify correct ordering by comparing UI data with dynamically generated expected values
+- Ensure accurate sorting through string and numeric comparison strategies
+
 ## Project Structure
 
 - tests/auth/login.spec.ts → authentication test scenarios
 - tests/shopping/cart.spec.ts → cart-related test scenarios
 - tests/shopping/checkout.spec.ts → checkout flow and validation tests
+- tests/inventory/sort.spec.ts → sorting test scenarios
+
+- tests/helpers/sortHelpers.ts → reusable sorting logic for expected value generation
 
 - pages/LoginPage.ts → Page Object for login page
 - pages/InventoryPage.ts → Page Object for inventory page
@@ -75,7 +88,6 @@ npx playwright test
 
 ## Future Improvements
 
-- Add inventory sorting tests
 - Add remove-from-cart scenarios
 - Integrate CI with GitHub Actions
 - Add test reporting (Allure / HTML report enhancement)
