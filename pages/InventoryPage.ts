@@ -25,6 +25,11 @@ export class InventoryPage {
       .filter({ hasText: productName });
   }
 
+  getAddToCartButton(productName: string): Locator {
+    const product = this.getProductItem(productName);
+    return product.getByRole("button", { name: "Add to cart" });
+  }
+
   getRemoveButton(productName: string): Locator {
     const product = this.getProductItem(productName);
     return product.getByRole("button", { name: "Remove" });
@@ -47,13 +52,11 @@ export class InventoryPage {
   }
 
   async addProductToCart(productName: string) {
-    const product = this.getProductItem(productName);
-    await product.getByRole("button", { name: "Add to cart" }).click();
+    await this.getAddToCartButton(productName).click();
   }
 
   async removeProductFromCart(productName: string) {
-    const product = this.getProductItem(productName);
-    await product.getByRole("button", { name: "Remove" }).click();
+    await this.getRemoveButton(productName).click();
   }
 
   async openCart() {

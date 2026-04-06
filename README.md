@@ -9,6 +9,7 @@ The goal of this project is to showcase QA automation skills including:
 - End-to-end user flow testing
 - Maintainable and scalable test structure
 - Data-driven validation using dynamic expected values
+- Interaction testing across multiple features
 
 ## Tech Stack
 
@@ -31,6 +32,10 @@ The goal of this project is to showcase QA automation skills including:
 ### Cart
 
 - Add product to cart and verify cart badge update
+- Remove product from cart and verify UI consistency
+  - Cart badge updates correctly
+  - Product state resets ("Remove" → "Add to cart")
+  - Cart page reflects removal
 - Verify product appears in cart after adding
 
 ---
@@ -61,6 +66,13 @@ The goal of this project is to showcase QA automation skills including:
 - Verify correct ordering by comparing UI data with dynamically generated expected values
 - Ensure accurate sorting through string and numeric comparison strategies
 
+---
+
+### Feature Interaction
+
+- Verify correct product can be added to cart after sorting
+- Ensure cart functionality works correctly even when product order changes
+
 ## Project Structure
 
 - tests/auth/login.spec.ts → authentication test scenarios
@@ -88,7 +100,7 @@ npx playwright test
 
 ## Future Improvements
 
-- Add remove-from-cart scenarios
 - Integrate CI with GitHub Actions
 - Add test reporting (Allure / HTML report enhancement)
 - Improve test data management (fixtures / data files)
+- Expand interaction scenarios (e.g., sorting + checkout flow)
