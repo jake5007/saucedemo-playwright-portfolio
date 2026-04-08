@@ -18,6 +18,21 @@ The goal of this project is to showcase QA automation skills including:
 - Playwright (TypeScript)
 - Node.js
 
+---
+
+## Test Report (Allure)
+
+Test execution results are visualized using Allure Report, providing clear insights into:
+
+- Step-by-step test execution
+- Cross-browser testing results
+- Execution time and test status
+- Detailed failure analysis
+
+![Allure Report](./images/allure-report.png)
+
+---
+
 ## Test Coverage
 
 ### Authentication
@@ -102,6 +117,5 @@ npx playwright test
 
 ## Future Improvements
 
-- Integrate advanced test reporting (Allure / enhanced HTML reports)
 - Introduce structured test data management using fixtures
 - Expand feature interaction scenarios (e.g., sorting + checkout flow)
