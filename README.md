@@ -33,6 +33,14 @@ Test execution results are visualized using Allure Report, providing clear insig
 
 ---
 
+## Live Test Report
+
+View the live Allure test report:
+
+👉 https://jake5007.github.io/saucedemo-playwright-portfolio/
+
+---
+
 ## Test Coverage
 
 ### Authentication
