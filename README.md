@@ -2,7 +2,7 @@
 
 [![Playwright Tests](https://github.com/jake5007/saucedemo-playwright-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/jake5007/saucedemo-playwright-portfolio/actions/workflows/playwright.yml)
 
-This project demonstrates end-to-end test automation using Playwright on the Sauce Demo website.
+This project demonstrates end-to-end test automation using Playwright on the [Sauce Demo website](https://www.saucedemo.com/), a sample e-commerce platform designed for testing practice.
 
 The goal of this project is to showcase QA automation skills including:
 
