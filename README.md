@@ -1,5 +1,7 @@
 # SauceDemo Playwright QA Automation Portfolio
 
+[![Playwright Tests](https://github.com/jake5007/saucedemo-playwright-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/jake5007/saucedemo-playwright-portfolio/actions/workflows/playwright.yml)
+
 This project demonstrates end-to-end test automation using Playwright on the Sauce Demo website.
 
 The goal of this project is to showcase QA automation skills including:
@@ -100,7 +102,6 @@ npx playwright test
 
 ## Future Improvements
 
-- Integrate CI with GitHub Actions
-- Add test reporting (Allure / HTML report enhancement)
-- Improve test data management (fixtures / data files)
-- Expand interaction scenarios (e.g., sorting + checkout flow)
+- Integrate advanced test reporting (Allure / enhanced HTML reports)
+- Introduce structured test data management using fixtures
+- Expand feature interaction scenarios (e.g., sorting + checkout flow)
